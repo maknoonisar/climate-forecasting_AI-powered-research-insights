@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenSight Climate Forecast</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>GreenSight Climate Forecast</h1>
+    </header>
+
+    <main class="grid-container">
+      <!-- Left Side: Forms -->
+      <div class="form-section">
+        <section>
+          <h2>Single Date Forecast</h2>
+          <form id="singleDateForm">
+            <label for="singleDate">Select Date:</label>
+            <input type="date" id="singleDate" name="singleDate" required>
+            <button type="submit">Predict Temperature</button>
+          </form>
+          <div id="singleResult"></div>
+        </section>
+
+        <section>
+          <h2>Range-Based Forecast</h2>
+          <form id="rangeForm">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+            <button type="submit">Show Forecast</button>
+          </form>
+        </section>
+      </div>
+
+      <!-- Right Side: Graph -->
+      <div class="graph-section">
+        <h2>Temperature Trends</h2>
+        <div id="rangeResult">
+          <canvas id="timeSeriesChart"></canvas>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
