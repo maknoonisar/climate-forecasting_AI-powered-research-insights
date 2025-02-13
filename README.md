@@ -130,6 +130,5 @@ Feel free to submit issues or pull requests.
 ## 📜 License
 MIT License. See `LICENSE` for details.
 
-## 🤝 Credits
-Developed by **[Your Name](https://github.com/your-username)**.
+
 
